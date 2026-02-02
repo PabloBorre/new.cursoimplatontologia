@@ -1,0 +1,219 @@
+/* PP Mori - Regular */
+@font-face {
+    font-family: 'PP Mori';
+    src: url('../fonts/PPMori-Regular.woff2') format('woff2'),
+         url('../fonts/PPMori-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* PP Mori - SemiBold */
+@font-face {
+    font-family: 'PP Mori';
+    src: url('../fonts/PPMori-SemiBold.woff2') format('woff2'),
+         url('../fonts/PPMori-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* PP Watch - ExtraLight */
+@font-face {
+    font-family: 'PP Watch';
+    src: url('../fonts/PPWatch-Extralight.woff2') format('woff2'),
+         url('../fonts/PPWatch-Extralight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* PP Watch - Medium */
+@font-face {
+    font-family: 'PP Watch';
+    src: url('../fonts/PPWatch-Medium.woff2') format('woff2'),
+         url('../fonts/PPWatch-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* PP Watch - Bold */
+@font-face {
+    font-family: 'PP Watch';
+    src: url('../fonts/PPWatch-Bold.woff2') format('woff2'),
+         url('../fonts/PPWatch-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ===== RESET & BASE ===== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-clarity: #E4F2F7;
+    --color-advance: #5497AF;
+    --color-depth: #042734;
+    --color-white: #FFFFFF;
+    --color-reflect: #99C9E1;
+    --color-anchor: #1A4C5E;
+    --color-black: #000000;
+
+    --font-primary: 'PP Watch', sans-serif;
+    --font-secondary: 'PP Mori', sans-serif;
+}
+
+body {
+    font-family: var(--font-secondary);
+    color: var(--color-depth);
+    background-color: var(--color-white);
+}
+
+/* ===== HEADER ===== */
+.main-header {
+    background-color: var(--color-advance);
+    padding: 2rem 0;
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo img {
+    height: 50px;
+    width: auto;
+}
+
+.header-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.header-nav a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    transition: opacity 0.3s ease;
+}
+
+.header-nav a:hover {
+    opacity: 0.8;
+}
+
+.header-phone {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--color-white);
+    color: var(--color-depth);
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: var(--font-secondary);
+    font-size: 0.95rem;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+}
+
+.header-phone:hover {
+    background-color: var(--color-clarity);
+}
+
+.phone-flag {
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* ===== HERO ===== */
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 550px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-arrow {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%) rotate(270deg);
+    width: auto;
+    height: 105%;
+    opacity: 0.3;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    width: 100%;
+}
+
+.hero h1 {
+    font-family: var(--font-primary);
+    font-weight: 200;
+    font-size: 3.5rem;
+    line-height: 1.15;
+    color: var(--color-white);
+}
+
+.hero h1 span {
+    color: var(--color-reflect);
+}
+
+.hero-logos {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.hero-logos img {
+    height: 40px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}

@@ -6,6 +6,9 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('welcome_message');
+        return view('inicio/head')
+             . view('inicio/header')
+             . view('inicio/index')
+             . view('inicio/footer');
     }
 }
