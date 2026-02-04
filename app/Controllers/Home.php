@@ -11,4 +11,13 @@ class Home extends BaseController
              . view('inicio/index')
              . view('inicio/footer');
     }
+
+
+    public function contacto()
+    {
+        return view('inicio/head')
+             . view('inicio/header')
+             . view('contacto/index')
+             . view('inicio/footer');
+    }
 }

@@ -1,10 +1,11 @@
 <footer class="main-footer">
-    <!-- Logo de fondo con transparencia -->
-    <div class="footer-bg-logo">
-        <img src="<?= base_url('assets/images/imagotipo-2.svg') ?>" alt="">
-    </div>
-    
     <div class="footer-container">
+        
+        <!-- Logo de fondo con transparencia -->
+        <div class="footer-bg-logo">
+            <img src="<?= base_url('assets/images/imagotipo-2.svg') ?>" alt="">
+        </div>
+        
         <div class="footer-content">
             <!-- Columna izquierda: Contacto + Navegación -->
             <div class="footer-left">

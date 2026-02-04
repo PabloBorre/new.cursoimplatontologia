@@ -135,4 +135,22 @@
             </div>
         </div>
     </section>
+
+
+    <!-- NO PIERDAS TU TIEMPO -->
+    <section class="no-time">
+        <div class="no-time-container">
+            <div class="no-time-arrow">
+                <img src="/assets/images/flecha-azul-claro.svg" alt="" class="no-time-arrow-filled">
+                <img src="/assets/images/flecha-azul-claro.svg" alt="" class="no-time-arrow-outline">
+            </div>
+            <p class="no-time-text">
+                <strong>No pierdas tu tiempo</strong><br>
+                en los muchos cursos teóricos<br>
+                de implantología o cirugía oral que<br>
+                se ofertan, en los que no<br>
+                colocas ni un solo implante
+            </p>
+        </div>
+    </section>
 </main>

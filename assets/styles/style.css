@@ -595,7 +595,55 @@ body {
 }
 
 
+/* ===== NO PIERDAS TU TIEMPO ===== */
+.no-time {
+    background-color: var(--color-depth);
+    padding: 4rem 0;
+    overflow: hidden;
+}
 
+.no-time-container {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.no-time-arrow {
+    display: flex;
+    align-items: center;
+}
+
+.no-time-arrow-filled {
+    height: 180px;
+    width: auto;
+    transform: rotate(90deg);
+}
+
+.no-time-arrow-outline {
+    height: 180px;
+    width: auto;
+    transform: rotate(90deg);
+    margin-left: -60px;
+    opacity: 0.4;
+}
+
+.no-time-text {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--color-white);
+    line-height: 1.4;
+    text-align: right;
+    margin: 0;
+}
+
+.no-time-text strong {
+    font-weight: 500;
+}
 
 
 
@@ -846,8 +894,8 @@ body {
     }
 
     .team-container {
-        flex-direction: column;
         gap: 2rem;
+        flex-direction: column-reverse;
     }
 
     .team-content {
@@ -988,6 +1036,8 @@ body {
 .header-phone > span {
     color: #5497AF !important;
 }
+
+
 /* ===== FOOTER ===== */
 .main-footer {
     position: relative;
@@ -999,9 +1049,9 @@ body {
 /* Logo de fondo con transparencia */
 .footer-bg-logo {
     position: absolute;
-    top: 50%;
-    right: -5%;
-    transform: translateY(-50%);
+    top: 60%;
+    right: 0;
+    transform: translateY(-50%) translateX(18.5%);;
     pointer-events: none;
     z-index: 0;
 }
@@ -1138,6 +1188,12 @@ body {
 }
 
 /* ===== FOOTER RESPONSIVE ===== */
+
+@media (max-width: 1000px) {
+    .footer-bg-logo {
+        display: none;
+    }
+}
 
 /* Tablet */
 @media (max-width: 1024px) {
@@ -1300,5 +1356,170 @@ body {
     }
     .courses-text-block{
         margin-top: 20px;
+    }
+}
+
+/* ===== NO-TIME RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .no-time-arrow-filled,
+    .no-time-arrow-outline {
+        height: 150px;
+    }
+
+    .no-time-arrow-outline {
+        margin-left: -50px;
+    }
+
+    .no-time-text {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .no-time {
+        padding: 3rem 0;
+    }
+
+    .no-time-arrow-filled,
+    .no-time-arrow-outline {
+        height: 120px;
+    }
+
+    .no-time-arrow-outline {
+        margin-left: -40px;
+    }
+
+    .no-time-text {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 480px) {
+    .no-time {
+        padding: 2.5rem 0;
+    }
+
+    .no-time-container {
+        padding: 0 1rem;
+        position: relative;
+        justify-content: center;
+    }
+
+    .no-time-arrow {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .no-time-arrow-filled,
+    .no-time-arrow-outline {
+        height: 100px;
+    }
+
+    .no-time-arrow-outline {
+        margin-left: -35px;
+    }
+
+    .no-time-text {
+        font-size: 1rem;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+    }
+}
+
+
+/* ===== PAGE HERO (Páginas interiores) ===== */
+.page-hero {
+    position: relative;
+    width: 100%;
+    min-height: 480px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.page-hero__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.page-hero__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page-hero__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(84, 151, 175, 0.55);
+    mix-blend-mode: multiply;
+}
+
+.page-hero__content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.page-hero__title {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 4rem;
+    color: var(--color-white);
+    margin: 0;
+}
+
+/* ===== PAGE HERO RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .page-hero {
+        min-height: 400px;
+    }
+
+    .page-hero__title {
+        font-size: 3.5rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .page-hero {
+        min-height: 340px;
+    }
+
+    .page-hero__content {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .page-hero__title {
+        font-size: 2.8rem;
+    }
+}
+
+/* Mobile small */
+@media (max-width: 480px) {
+    .page-hero {
+        min-height: 280px;
+    }
+
+    .page-hero__content {
+        padding: 2rem 1rem;
+    }
+
+    .page-hero__title {
+        font-size: 2.2rem;
     }
 }
