@@ -145,12 +145,81 @@
                 <img src="/assets/images/flecha-azul-claro.svg" alt="" class="no-time-arrow-outline">
             </div>
             <p class="no-time-text">
-                <strong>No pierdas tu tiempo</strong><br>
-                en los muchos cursos teóricos<br>
-                de implantología o cirugía oral que<br>
-                se ofertan, en los que no<br>
-                colocas ni un solo implante
+                <strong>Don’t waste your time</strong><br>
+                on the many theoretical courses<br>
+                in implantology or oral <br>
+                surgery that are offered,<br>
+                where you don’t place<br>
+                a single implant
             </p>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <section class="contact-form-section">
+        <div class="contact-form-section__container">
+            <!-- Columna izquierda: Formulario -->
+            <div class="contact-form-section__left">
+                <h2 class="contact-form-section__title">Any questions?</h2>
+                
+                <?= form_open('contacto/enviar', ['class' => 'contact-form', 'id' => 'contactForm']) ?>
+                    <div class="contact-form__group">
+                        <input 
+                            type="text" 
+                            name="nombre" 
+                            id="nombre" 
+                            class="contact-form__input" 
+                            placeholder="Name"
+                            required
+                        >
+                    </div>
+                    
+                    <div class="contact-form__group">
+                        <input 
+                            type="email" 
+                            name="email" 
+                            id="email" 
+                            class="contact-form__input" 
+                            placeholder="Email"
+                            required
+                        >
+                    </div>
+                    
+                    <div class="contact-form__group">
+                        <input 
+                            type="tel" 
+                            name="telefono" 
+                            id="telefono" 
+                            class="contact-form__input" 
+                            placeholder="Phone"
+                        >
+                    </div>
+                    
+                    <div class="contact-form__group">
+                        <textarea 
+                            name="mensaje" 
+                            id="mensaje" 
+                            class="contact-form__textarea" 
+                            placeholder="Message"
+                            rows="6"
+                            required
+                        ></textarea>
+                    </div>
+                    
+                    <button type="submit" class="contact-form__submit">Send</button>
+                <?= form_close() ?>
+            </div>
+            
+            <!-- Columna derecha: Imagen -->
+            <div class="contact-form-section__right">
+                <div class="contact-form-section__image-wrapper">
+                    <img src="<?= base_url('assets/images/habana-contacto.webp') ?>" alt="Havana, Cuba" class="contact-form-section__image">
+                </div>
+                <p class="contact-form-section__caption">
+                    Interested in taking our implantology courses,<br>
+                    but can't attend in person?
+                </p>
+            </div>
         </div>
     </section>
 </main>

@@ -647,6 +647,222 @@ body {
 
 
 
+/* ===== DOCENTES PAGE ===== */
+
+/* Fila base */
+.docentes-row {
+    padding: 4rem 2rem;
+}
+
+.docentes-row__container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.docentes-row__col {
+    flex: 1;
+}
+
+/* FILA 1: Intro + Título */
+.docentes-row--1 {
+    background-color: var(--color-white);
+    padding-top: 5rem;
+}
+
+.docentes-row--1 .docentes-row__col--left {
+    flex: 0.7;
+}
+
+.docentes-row--1 .docentes-row__col--right {
+    flex: 1;
+}
+
+.docentes-intro-text {
+    font-family: var(--font-secondary);
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--color-anchor);
+    line-height: 1.6;
+}
+
+.docentes-row--1 .docentes-row__col--right {
+    text-align: right;
+}
+
+.docentes-main-title {
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--color-advance);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.docentes-main-title span {
+    font-weight: 200;
+    display: block;
+}
+
+.docentes-btn {
+    display: inline-block;
+    background-color: var(--color-depth);
+    color: var(--color-white);
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    line-height: 1.3;
+    text-align: center;
+    width: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.docentes-btn:hover {
+    background-color: var(--color-anchor);
+}
+
+/* FILA 2: Foto Doctor + Descripción */
+.docentes-row--2 {
+    background-color: var(--color-clarity);
+    padding-top: 0;
+    padding-bottom: 3rem;
+}
+
+.docentes-row--2 .docentes-row__container {
+    align-items: center;
+}
+
+.docentes-row--2 .docentes-row__col--left {
+    flex: 1;
+}
+
+.docentes-row--2 .docentes-row__col--right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+}
+
+.docentes-doctor-image {
+    position: relative;
+    z-index: 2;
+}
+
+.docentes-doctor-image img {
+    width: 100%;
+    max-width: 540px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: -70px;
+}
+
+.docentes-doctor-text {
+    font-family: var(--font-secondary);
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--color-anchor);
+    line-height: 1.6;
+    text-align: right;
+}
+
+.docentes-doctor-text strong {
+    font-weight: 600;
+}
+
+/* FILA 3: Metodología + Imagen operación */
+.docentes-row--3 {
+    background-color: var(--color-white);
+    padding-top: 2rem;
+    padding-bottom: 0;
+}
+
+.docentes-row--3 .docentes-row__container {
+    align-items: center;
+}
+
+.docentes-row--3 .docentes-row__col--left {
+    flex: 1;
+    margin-bottom: 80px;
+}
+
+.docentes-row--3 .docentes-row__col--right {
+    flex: 1;
+}
+
+.docentes-metodologia-text {
+    font-family: var(--font-secondary);
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--color-anchor);
+    line-height: 1.6;
+}
+
+.docentes-operacion-image {
+    position: relative;
+    z-index: 2;
+}
+
+.docentes-operacion-image img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: auto;
+    display: block;
+    margin-top: -120px;
+}
+
+
+/* FILA 4: Más de 200 cursos */
+.docentes-row--4 {
+    background-color: var(--color-clarity);
+    padding-top: 0;
+    padding-bottom: 4rem;
+    margin-top: -80px;
+}
+
+.docentes-cursos-title {
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--color-advance);
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.docentes-row--4 .docentes-row__col--left {
+    flex: 1;
+}
+
+.docentes-row--4 .docentes-row__col--right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.docentes-cursos-image img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.docentes-cursos-text {
+    font-family: var(--font-secondary);
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--color-anchor);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
 
 /* ===== RESPONSIVE ===== */
 
@@ -1446,12 +1662,15 @@ body {
     width: 100%;
     height: 100%;
     z-index: 0;
+    background-color: #052733;
 }
 
 .page-hero__image {
     width: 100%;
     height: 100%;
+    mix-blend-mode: luminosity;
     object-fit: cover;
+    opacity: 43%;
 }
 
 .page-hero__overlay {
@@ -1521,5 +1740,1008 @@ body {
 
     .page-hero__title {
         font-size: 2.2rem;
+    }
+}
+
+/* ===== CONTACT BAR (Barra de contacto) ===== */
+.contact-bar {
+    background-color: var(--color-white);
+    padding: 3rem 0;
+}
+
+.contact-bar__container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.contact-bar__item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    color: var(--color-depth);
+    transition: color 0.3s ease;
+}
+
+a.contact-bar__item:hover {
+    color: var(--color-advance);
+}
+
+.contact-bar__arrow {
+    width: 24px;
+    height: auto;
+    transform: rotate(180deg);
+    flex-shrink: 0;
+}
+
+.contact-bar__item span {
+    font-family: var(--font-primary);
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+
+/* ===== CONTACT BAR RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .contact-bar__container {
+        gap: 3rem;
+    }
+
+    .contact-bar__item span {
+        font-size: 1.1rem;
+    }
+
+    .contact-bar__arrow {
+        width: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .contact-bar {
+        padding: 1.5rem 0;
+    }
+
+    .contact-bar__container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .contact-bar__item span {
+        font-size: 1.05rem;
+    }
+}
+
+/* Mobile small */
+@media (max-width: 480px) {
+    .contact-bar__container {
+        padding: 0 1.5rem;
+    }
+
+    .contact-bar__arrow {
+        width: 18px;
+    }
+
+    .contact-bar__item span {
+        font-size: 1rem;
+    }
+}
+
+/* ===== CONTACT FORM SECTION ===== */
+.contact-form-section {
+    background-color: var(--color-clarity);
+    padding: 4rem 0;
+}
+
+.contact-form-section__container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+/* Columna izquierda */
+.contact-form-section__left {
+    max-width: 500px;
+}
+
+.contact-form-section__title {
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--color-advance);
+    margin: 0 0 2rem 0;
+}
+
+/* Formulario */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form__group {
+    width: 100%;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: var(--color-advance);
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 0;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-form__input::placeholder,
+.contact-form__textarea::placeholder {
+    color: var(--color-advance);
+    opacity: 0.8;
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus {
+    box-shadow: 0 0 0 2px var(--color-advance);
+}
+
+.contact-form__textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form__submit {
+    align-self: flex-start;
+    padding: 0.875rem 3rem;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-white);
+    background-color: var(--color-depth);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.contact-form__submit:hover {
+    background-color: var(--color-anchor);
+}
+
+/* Columna derecha */
+.contact-form-section__right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-form-section__image-wrapper {
+    background-color: #052733;
+    overflow: hidden;
+}
+
+.contact-form-section__image {
+    width: 100%;
+    height: 428px;
+    object-fit: cover;
+    object-position: center center;
+    mix-blend-mode: luminosity;
+    opacity: 0.43;
+}
+
+.contact-form-section__caption {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 200;
+    color: var(--color-anchor);
+    text-align: right;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ===== DOCENTES RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .docentes-row {
+        padding: 3rem 2rem;
+    }
+
+    .docentes-row__container {
+        gap: 3rem;
+    }
+
+    .docentes-main-title {
+        font-size: 2.5rem;
+    }
+
+    .docentes-intro-text {
+        font-size: 1rem;
+    }
+
+    .docentes-doctor-image img {
+        max-width: 400px;
+        margin-top: -100px;
+    }
+
+    .docentes-doctor-text {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .docentes-row__container {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .docentes-row--1 {
+        padding-top: 3rem;
+    }
+
+    .docentes-row--1 .docentes-row__col--right {
+        text-align: center;
+    }
+
+    .docentes-intro-text {
+        text-align: center;
+    }
+
+    .docentes-main-title {
+        font-size: 2.2rem;
+    }
+
+    /* Fila 2 mobile */
+    .docentes-row--2 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .docentes-row--2 .docentes-row__col--right {
+        padding-bottom: 0;
+    }
+
+    .docentes-doctor-image {
+        text-align: center;
+    }
+
+    .docentes-doctor-image img {
+        max-width: 300px;
+        margin-top: 0;
+    }
+
+    .docentes-doctor-text {
+        text-align: center;
+    }
+}
+
+/* Mobile small */
+@media (max-width: 480px) {
+    .docentes-row {
+        padding: 2.5rem 1rem;
+    }
+
+    .docentes-main-title {
+        font-size: 1.9rem;
+    }
+
+    .docentes-intro-text {
+        font-size: 0.95rem;
+    }
+
+    .docentes-btn {
+        font-size: 0.95rem;
+        padding: 0.7rem 1.5rem;
+    }
+
+    /* Fila 2 mobile small */
+    .docentes-doctor-image img {
+        max-width: 260px;
+        margin-top: 0;
+    }
+
+    .docentes-doctor-text {
+        font-size: 0.95rem;
+    }
+}
+
+/* Fila 3 */
+@media (max-width: 1024px) {
+    .docentes-row {
+        padding: 3rem 2rem;
+    }
+
+    .docentes-row__container {
+        gap: 3rem;
+    }
+
+    .docentes-main-title {
+        font-size: 2.5rem;
+    }
+
+    .docentes-intro-text {
+        font-size: 1rem;
+    }
+
+    .docentes-doctor-image img {
+        max-width: 400px;
+        margin-top: -100px;
+    }
+
+    .docentes-doctor-text {
+        font-size: 1rem;
+    }
+
+    .docentes-metodologia-text {
+        font-size: 1rem;
+    }
+
+    .docentes-operacion-image img {
+        max-width: 450px;
+        margin-top: -100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .docentes-row__container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .reverse-colum{
+        flex-direction: column-reverse;
+    }
+
+    .docentes-row--1 {
+        padding-top: 3rem;
+    }
+
+    .docentes-row--1 .docentes-row__col--right {
+        text-align: center;
+    }
+
+    .docentes-intro-text {
+        text-align: center;
+    }
+
+    .docentes-main-title {
+        font-size: 2.2rem;
+    }
+
+    .docentes-row--2 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .docentes-row--2 .docentes-row__col--right {
+        padding-bottom: 0;
+    }
+
+    .docentes-doctor-image {
+        text-align: center;
+    }
+
+    .docentes-doctor-image img {
+        max-width: 300px;
+        margin-top: 0;
+    }
+
+    .docentes-doctor-text {
+        text-align: center;
+    }
+
+    .docentes-row--3 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .docentes-row--3 .docentes-row__col--left {
+        padding-top: 0;
+    }
+
+    .docentes-metodologia-text {
+        text-align: center;
+    }
+
+    .docentes-operacion-image {
+        text-align: center;
+    }
+
+    .docentes-operacion-image img {
+        max-width: 320px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .docentes-row {
+        padding: 2.5rem 1rem;
+    }
+
+    .docentes-main-title {
+        font-size: 1.9rem;
+    }
+
+    .docentes-intro-text {
+        font-size: 0.95rem;
+    }
+
+    .docentes-btn {
+        font-size: 0.95rem;
+        padding: 0.7rem 1.5rem;
+    }
+
+    .docentes-doctor-image img {
+        max-width: 260px;
+    }
+
+    .docentes-doctor-text {
+        font-size: 0.95rem;
+    }
+
+    .docentes-metodologia-text {
+        font-size: 0.95rem;
+    }
+
+    .docentes-operacion-image img {
+        max-width: 280px;
+    }
+}
+
+/* Fila 4  */
+@media (max-width: 1024px) {
+    .docentes-row {
+        padding: 3rem 2rem;
+    }
+
+    .docentes-row__container {
+        gap: 3rem;
+    }
+
+    .docentes-main-title {
+        font-size: 2.5rem;
+    }
+
+    .docentes-intro-text {
+        font-size: 1rem;
+    }
+
+    .docentes-doctor-image img {
+        max-width: 400px;
+        margin-top: -100px;
+    }
+
+    .docentes-doctor-text {
+        font-size: 1rem;
+    }
+
+    .docentes-metodologia-text {
+        font-size: 1rem;
+    }
+
+    .docentes-operacion-image img {
+        max-width: 450px;
+        margin-top: -100px;
+    }
+
+    .docentes-cursos-title {
+        font-size: 2.5rem;
+    }
+
+    .docentes-cursos-image img {
+        max-width: 350px;
+    }
+
+    .docentes-cursos-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .docentes-row__container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .docentes-row--1 {
+        padding-top: 3rem;
+    }
+
+    .docentes-row--1 .docentes-row__col--right {
+        text-align: center;
+    }
+
+    .docentes-intro-text {
+        text-align: center;
+    }
+
+    .docentes-main-title {
+        font-size: 2.2rem;
+    }
+
+    .docentes-row--2 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .docentes-row--2 .docentes-row__col--right {
+        padding-bottom: 0;
+    }
+
+    .docentes-doctor-image {
+        text-align: center;
+    }
+
+    .docentes-doctor-image img {
+        max-width: 300px;
+        margin-top: 0;
+    }
+
+    .docentes-doctor-text {
+        text-align: center;
+    }
+
+    .docentes-row--3 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .docentes-row--3 .docentes-row__col--left {
+        padding-top: 0;
+    }
+
+    .docentes-metodologia-text {
+        text-align: center;
+    }
+
+    .docentes-operacion-image {
+        text-align: center;
+    }
+
+    .docentes-operacion-image img {
+        max-width: 320px;
+        margin-top: 0;
+    }
+
+    .docentes-row--4 {
+        margin-top: 0;
+        padding-top: 3rem;
+    }
+
+    .docentes-cursos-title {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .docentes-row--4 .docentes-row__col--right {
+        align-items: center;
+        text-align: center;
+    }
+
+    .docentes-cursos-image {
+        text-align: center;
+    }
+
+    .docentes-cursos-image img {
+        max-width: 280px;
+    }
+
+    .docentes-cursos-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .docentes-row {
+        padding: 2.5rem 1rem;
+    }
+
+    .docentes-main-title {
+        font-size: 1.9rem;
+    }
+
+    .docentes-intro-text {
+        font-size: 0.95rem;
+    }
+
+    .docentes-btn {
+        font-size: 0.95rem;
+        padding: 0.7rem 1.5rem;
+    }
+
+    .docentes-doctor-image img {
+        max-width: 260px;
+    }
+
+    .docentes-doctor-text {
+        font-size: 0.95rem;
+    }
+
+    .docentes-metodologia-text {
+        font-size: 0.95rem;
+    }
+
+    .docentes-operacion-image img {
+        max-width: 280px;
+    }
+
+    .docentes-cursos-title {
+        font-size: 1.9rem;
+    }
+
+    .docentes-cursos-image img {
+        max-width: 240px;
+    }
+
+    .docentes-cursos-text {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* ===== COURSES LIST (Listado de cursos) ===== */
+.courses-list {
+    padding: 0;
+}
+
+/* Course Card Base */
+.course-card {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+}
+
+/* Fondos divididos (arriba blanco grande, abajo azul estrecho) */
+.course-card__bg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.course-card__bg--white {
+    top: 0;
+    height: 65%;
+    background-color: var(--color-white);
+}
+
+.course-card__bg--light {
+    bottom: 60px;
+    height: 25%;
+    background-color: var(--color-clarity);
+}
+
+/* Wrapper con max-width */
+.course-card__wrapper {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Image Side */
+.course-card__image-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.course-card--left .course-card__image-side {
+    justify-content: flex-start;
+}
+
+.course-card--right .course-card__image-side {
+    justify-content: flex-end;
+}
+
+/* Image Box */
+.course-card__image-box {
+    width: 340px;
+    height: 300px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.course-card--left .course-card__image-box {
+    clip-path: polygon(0 0, calc(100% - 60px) 0, 100% 50%, calc(100% - 60px) 100%, 0 100%);
+}
+
+.course-card--right .course-card__image-box {
+    clip-path: polygon(60px 0, 100% 0, 100% 100%, 60px 100%, 0 50%);
+}
+
+.course-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Arrows */
+.course-card__arrows {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.course-card__arrow--outline {
+    opacity: 0.4;
+}
+
+/* Flechas lado izquierdo: apuntan a la derecha */
+.course-card--left .course-card__arrow--filled {
+    height: 300px;
+    margin-left: -150px;
+}
+
+.course-card--left .course-card__arrow--outline {
+    transform: rotate(90deg);
+    width: 300px;
+    margin-left: -190px;
+}
+
+/* Flechas lado derecho: apuntan a la izquierda */
+.course-card--right .course-card__arrow--outline {
+    transform: rotate(-90deg);
+    width: 300px;
+    margin-right: -190px;
+}
+
+.course-card--right .course-card__arrow--filled {
+    transform: rotate(180deg);
+    height: 300px;
+    margin-right: -150px;
+}
+
+/* Content */
+.course-card__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-card--left .course-card__content {
+    align-items: flex-end;
+    text-align: right;
+    padding-left: 2rem;
+}
+
+.course-card--right .course-card__content {
+    align-items: flex-start;
+    text-align: left;
+    padding-right: 2rem;
+}
+
+.course-card__title {
+    font-family: var(--font-primary);
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: var(--color-depth);
+    line-height: 1.05;
+    margin: 0;
+}
+
+.course-card__subtitle {
+    font-family: var(--font-primary);
+    font-size: 1.35rem;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--color-advance);
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+.course-card__btn {
+    display: inline-block;
+    padding: 0.75rem 1.75rem;
+    font-family: var(--font-secondary);
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--color-white);
+    background-color: var(--color-depth);
+    border: 1px solid var(--color-depth);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.course-card__btn:hover {
+    background-color: var(--color-depth);
+    color: var(--color-white);
+}
+
+/* ===== COURSES LIST RESPONSIVE ===== */
+
+/* Desktop medium */
+@media (max-width: 1200px) {
+    .course-card {
+        min-height: 380px;
+    }
+
+    .course-card__title {
+        font-size: 2.8rem;
+    }
+
+    .course-card__image-box {
+        width: 280px;
+        height: 250px;
+    }
+
+    .course-card--left .course-card__arrow--filled {
+        height: 250px;
+        margin-left: -125px;
+    }
+
+    .course-card--left .course-card__arrow--outline {
+        width: 250px;
+        margin-left: -160px;
+    }
+
+    .course-card--right .course-card__arrow--outline {
+        width: 250px;
+        margin-right: -160px;
+    }
+
+    .course-card--right .course-card__arrow--filled {
+        height: 250px;
+        margin-right: -125px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .course-card {
+        min-height: 340px;
+    }
+
+    .course-card__wrapper {
+        padding: 2.5rem 2rem;
+    }
+
+    .course-card__title {
+        font-size: 2.4rem;
+    }
+
+    .course-card__subtitle {
+        font-size: 1.15rem;
+    }
+
+    .course-card__image-box {
+        width: 230px;
+        height: 200px;
+    }
+
+    .course-card--left .course-card__image-box {
+        clip-path: polygon(0 0, calc(100% - 45px) 0, 100% 50%, calc(100% - 45px) 100%, 0 100%);
+    }
+
+    .course-card--right .course-card__image-box {
+        clip-path: polygon(45px 0, 100% 0, 100% 100%, 45px 100%, 0 50%);
+    }
+
+    .course-card--left .course-card__arrow--filled {
+        height: 200px;
+        margin-left: -100px;
+    }
+
+    .course-card--left .course-card__arrow--outline {
+        width: 200px;
+        margin-left: -130px;
+    }
+
+    .course-card--right .course-card__arrow--outline {
+        width: 200px;
+        margin-right: -130px;
+    }
+
+    .course-card--right .course-card__arrow--filled {
+        height: 200px;
+        margin-right: -100px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .course-card {
+        min-height: auto;
+    }
+
+    .course-card__bg--white {
+        height: 50%;
+    }
+
+    .course-card__bg--light {
+        height: 50%;
+    }
+
+    .course-card__wrapper {
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .course-card--right .course-card__wrapper {
+        flex-direction: column;
+    }
+
+    .course-card__image-side {
+        justify-content: center !important;
+        order: -1;
+    }
+
+    .course-card__arrows {
+        display: none;
+    }
+
+    .course-card__image-box {
+        width: 100%;
+        max-width: 350px;
+        height: 180px;
+    }
+
+    .course-card--left .course-card__image-box,
+    .course-card--right .course-card__image-box {
+        clip-path: none;
+        border-radius: 8px;
+    }
+
+    .course-card__content {
+        align-items: center !important;
+        text-align: center !important;
+        padding: 0 !important;
+    }
+
+    .course-card__title {
+        font-size: 1.8rem;
+    }
+
+    .course-card__title br {
+        display: none;
+    }
+
+    .course-card__subtitle {
+        font-size: 1rem;
+        margin: 0.25rem 0 1rem 0;
+    }
+}
+
+/* Mobile small */
+@media (max-width: 480px) {
+    .course-card__wrapper {
+        padding: 1.5rem 1rem;
+    }
+
+    .course-card__image-box {
+        height: 150px;
+    }
+
+    .course-card__title {
+        font-size: 1.5rem;
+    }
+
+    .course-card__btn {
+        padding: 0.6rem 1.25rem;
+        font-size: 0.8rem;
     }
 }

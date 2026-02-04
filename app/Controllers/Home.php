@@ -20,4 +20,20 @@ class Home extends BaseController
              . view('contacto/index')
              . view('inicio/footer');
     }
+
+    public function docentes()
+    {
+        return view('docentes/head')
+             . view('inicio/header')
+             . view('docentes/index')
+             . view('inicio/footer');
+    }
+
+    public function cursos()
+    {
+        return view('inicio/head')
+             . view('inicio/header')
+             . view('cursos/index')
+             . view('inicio/footer');
+    }
 }
