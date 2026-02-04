@@ -259,7 +259,7 @@ body {
 /* ===== LOCATION - LA HABANA ===== */
 .location {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     min-height: 350px;
     background-color: var(--color-white);
     overflow: hidden;
@@ -275,9 +275,9 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(100% - 60px);
+    width: calc(100% - 80px);
     height: 100%;
-    clip-path: polygon(0 0, calc(100% - 100px) 0, 100% 50%, calc(100% - 100px) 100%, 0 100%);
+    clip-path: polygon(0 0, calc(100% - 190px) 0, 100% 50%, calc(100% - 190px) 100%, 0 100%);
     overflow: hidden;
 }
 
@@ -336,6 +336,268 @@ body {
     line-height: 1;
     margin: 0;
 }
+
+/* ===== STATS ===== */
+.stats {
+    position: relative;
+    background-color: var(--color-clarity);
+    padding: 4rem 2rem 3rem;
+    overflow: hidden;
+}
+
+
+.stats-bg-arrow {
+    height: 250px;
+    width: auto;
+    transform: rotate(180deg);
+}
+
+.stats-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.stat-arrows {
+    position: relative;
+    height: 140px;
+    width: 120px;
+    margin-bottom: 1rem;
+    
+}
+
+.stat-arrow-bg {
+    position: absolute;
+    top: -130px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    height: 120px;
+    width: auto;
+    opacity: 0.3;
+}
+
+.stat-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(270deg);
+    height: 160px;
+    width: auto;
+}
+
+.stat-number {
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--color-advance);
+}
+
+.stat-text {
+    font-family: var(--font-secondary);
+    font-size: 1.1rem;
+    color: var(--color-advance);
+    line-height: 1.3;
+}
+
+
+/* ===== TEAM - EQUIPO DOCENTE ===== */
+.team {
+    background-color: var(--color-white);
+    padding: 4rem 2rem;
+}
+
+.team-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.team-content {
+    flex: 0 0 35%;
+}
+
+.team-text {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--color-advance);
+    margin-bottom: 2rem;
+}
+
+.team-text-light {
+    font-weight: 200;
+}
+
+.team-btn {
+    display: inline-block;
+    background-color: var(--color-depth);
+    color: var(--color-white);
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0.5rem 4rem;
+    border-radius: 10px;
+    line-height: 1.1;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 95%;
+}
+
+.team-btn:hover {
+    background-color: var(--color-anchor);
+}
+
+.team-image {
+    flex: 1;
+}
+
+.team-image img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* ===== COURSES - CURSOS DE IMPLANTOLOGÍA ===== */
+.courses {
+    position: relative;
+    padding: 4rem 2rem;
+}
+
+.courses-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 450px;
+    background-color: var(--color-clarity);
+    z-index: 0;
+}
+
+.courses-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 4rem;
+}
+
+.courses-left {
+    flex: 1;
+}
+
+.courses-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.courses-title {
+    font-family: var(--font-primary);
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: var(--color-advance);
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.courses-image-1 img,
+.courses-image-2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.courses-image-1 {
+    margin-bottom: 2rem;
+}
+
+.courses-text-block {
+    margin-bottom: 2rem;
+    margin-top: 80px;
+}
+
+.courses-text {
+    font-size: 1.25rem;
+    font-weight: 200;
+    color: var(--color-advance);
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+
+.courses-text strong {
+    font-weight: 500;
+}
+
+.courses-list {
+    list-style: none;
+}
+
+.courses-list li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    text-align: right;
+}
+
+.courses-list-arrow {
+    height: 25px;
+    width: auto;
+    transform: rotate(180deg);
+}
+
+.courses-list span {
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: var(--color-advance);
+    line-height: 1.4;
+}
+
+.courses-image-2 {
+    margin-bottom: 2rem;
+    margin-top: 100px;
+}
+
+.courses-btn {
+    display: inline-block;
+    align-self: center;
+    background-color: var(--color-depth);
+    color: var(--color-white);
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 1rem 4rem;
+    border-radius: 10px;
+    line-height: 1.4;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.courses-btn:hover {
+    background-color: var(--color-anchor);
+}
+
+
+
+
+
+
 
 /* ===== RESPONSIVE ===== */
 
@@ -433,16 +695,16 @@ body {
     }
 
     .location-image-wrapper {
-        width: calc(100% - 40px);
-        clip-path: polygon(0 0, calc(100% - 70px) 0, 100% 50%, calc(100% - 70px) 100%, 0 100%);
+        width: calc(100% - 80px); /* antes era 60px, ahora más ancho para acercarse a las flechas */
+        clip-path: polygon(0 0, calc(100% - 110px) 0, 100% 50%, calc(100% - 110px) 100%, 0 100%); /* ajustar el corte */
     }
 
     .location-arrow-filled {
-        right: 20px;
+        right: 50px; /* ajustar posición */
     }
 
     .location-arrow-outline {
-        right: -5px;
+        right: 25px;
     }
 
     .location-content {
@@ -456,6 +718,45 @@ body {
     .location-title {
         font-size: 3.5rem;
     }
+
+    .stats-container {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .stat-arrow-bg {
+        top:-145px;
+    }
+
+    .stat-arrow {
+        height: 120px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .stat-arrow-bg {
+        display: block; /* mantener visible en tablet */
+        height: 130px;
+    }
+
+    .stat-arrows {
+        height: 100px;
+    }
+
+    .team-container {
+        gap: 3rem;
+    }
+
+    .team-content {
+        flex: 0 0 45%;
+    }
+
+    .team-text {
+        font-size: 1.3rem;
+    }
+
 }
 
 /* Mobile */
@@ -520,6 +821,47 @@ body {
     .location-title {
         font-size: 2.8rem;
     }
+
+    .stats-container {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .stat-item {
+        flex: 0 0 calc(50% - 1rem);
+    }
+
+    .stat-arrows {
+        height: 100px;
+    }
+
+    .stat-arrow-bg {
+        display: none;
+        height: 110px;
+    }
+
+    .stat-arrow {
+        height: 100px;
+    }
+
+    .team-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .team-content {
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .team-text {
+        font-size: 1.2rem;
+    }
+
+    .team-image {
+        width: 100%;
+    }
 }
 
 /* Mobile small */
@@ -570,8 +912,320 @@ body {
     .location-title {
         font-size: 2.2rem;
     }
+
+    .stats {
+        padding: 3rem 1rem 2rem;
+    }
+
+    .stat-arrow {
+        height: 90px;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .stat-text {
+        font-size: 1rem;
+    }
+
+    .team {
+        padding: 3rem 1rem;
+    }
+
+    .team-text {
+        font-size: 1.1rem;
+    }
+
+    .team-btn {
+        font-size: 0.95rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+/* ===== PANTALLAS GRANDES (añadir nuevo media query) ===== */
+@media (min-width: 1400px) {
+    .location {
+        min-height: 420px;
+    }
+    
+    .location-image-container {
+        height: 420px;
+    }
+    
+    .location-image-wrapper {
+        clip-path: polygon(0 0, calc(100% - 190px) 0, 100% 50%, calc(100% - 190px) 100%, 0 100%);
+    }
+    
+    .location-title {
+        font-size: 5rem;
+    }
+    
+    .location-subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1800px) {
+    .location {
+        min-height: 480px;
+    }
+    
+    .location-image-container {
+        height: 480px;
+    }
+    
+    .location-content {
+        padding: 2rem 6rem;
+    }
+    
+    .location-title {
+        font-size: 5.5rem;
+    }
 }
 
 .header-phone > span {
     color: #5497AF !important;
+}
+/* ===== FOOTER ===== */
+.main-footer {
+    position: relative;
+    background-color: var(--color-depth);
+    padding: 4rem 0 2rem;
+    overflow: hidden;
+}
+
+/* Logo de fondo con transparencia */
+.footer-bg-logo {
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.footer-bg-logo img {
+    height: 450px;
+    width: auto;
+    opacity: 0.08;
+}
+
+.footer-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Columna izquierda */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+/* Contacto */
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.footer-phone {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-phone:hover {
+    color: var(--color-reflect);
+}
+
+.footer-location {
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-white);
+    margin: 0;
+}
+
+.footer-email {
+    font-family: var(--font-secondary);
+    font-size: 0.95rem;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-email:hover {
+    color: var(--color-reflect);
+}
+
+/* Navegación columnas */
+.footer-nav-columns {
+    display: flex;
+    gap: 4rem;
+}
+
+.footer-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav li {
+    margin-bottom: 0.4rem;
+}
+
+.footer-nav a {
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: var(--color-reflect);
+}
+
+.footer-nav--main a {
+    font-weight: 200;
+}
+
+.footer-nav--legal a {
+    font-weight: 200;
+    color: var(--color-reflect);
+}
+
+.footer-nav--legal a:hover {
+    color: var(--color-white);
+}
+
+/* Logo principal */
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 220px;
+    width: auto;
+}
+
+/* Copyright */
+.footer-copyright {
+    margin-top: 2.5rem;
+}
+
+.footer-copyright p {
+    font-family: var(--font-secondary);
+    font-size: 0.85rem;
+    color: var(--color-reflect);
+    margin: 0;
+}
+
+/* ===== FOOTER RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .main-footer {
+        padding: 3rem 0 1.5rem;
+    }
+
+    .footer-logo img {
+        height: 180px;
+    }
+
+    .footer-bg-logo img {
+        height: 350px;
+    }
+
+    .footer-nav-columns {
+        gap: 3rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .main-footer {
+        padding: 2.5rem 0 1.5rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .footer-left {
+        gap: 2rem;
+    }
+
+    .footer-phone {
+        font-size: 1.3rem;
+    }
+
+    .footer-logo {
+        align-self: center;
+    }
+
+    .footer-logo img {
+        height: 150px;
+    }
+
+    .footer-bg-logo {
+        right: -15%;
+        top: 40%;
+    }
+
+    .footer-bg-logo img {
+        height: 280px;
+    }
+
+    .footer-copyright {
+        margin-top: 2rem;
+    }
+}
+
+/* Mobile small */
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 0 1.5rem;
+    }
+
+    .footer-phone {
+        font-size: 1.2rem;
+    }
+
+    .footer-nav-columns {
+        gap: 2.5rem;
+    }
+
+    .footer-logo img {
+        height: 120px;
+    }
+
+    .footer-bg-logo {
+        right: -25%;
+    }
+
+    .footer-bg-logo img {
+        height: 220px;
+    }
+
+    .footer-copyright p {
+        font-size: 0.75rem;
+        line-height: 1.4;
+    }
 }
