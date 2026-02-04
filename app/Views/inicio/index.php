@@ -94,43 +94,44 @@
         <div class="courses-container">
             <!-- Columna izquierda -->
             <div class="courses-left">
-                <h2 class="courses-title">Cursos de<br>implantología</h2>
+                <h2 class="courses-title">Implantology Courses
                 <div class="courses-image-1">
                     <img src="/assets/images/curso-implantologia-1.webp" alt="Curso de implantología">
                 </div>
                 <ul class="courses-list">
                     <li>
-                        <span>Coloca 20 implantes<br>y asiste a la colocación de otros 20,<br>en todas las áreas bucales</span>
+                        <span>Place 20 implants and assist in the placement of another 20, in all areas of the mouth</span>
                         <img src="/assets/images/flecha-azulclaro-rellena.svg" alt="" class="courses-list-arrow">
                     </li>
                     <li>
-                        <span>Aprende a diagnosticar,<br>planificar y tratar a todo tipo de pacientes</span>
+                        <span>Learn how to diagnose, plan, and treat all types of patients</span>
                         <img src="/assets/images/flecha-azulclaro-rellena.svg" alt="" class="courses-list-arrow">
                     </li>
                     <li>
-                        <span>Trabaja con pacientes con edentulismo<br>unitario, parcial y total</span>
+                        <span>Work with patients with single, partial, and total edentulism</span>
                         <img src="/assets/images/flecha-azulclaro-rellena.svg" alt="" class="courses-list-arrow">
                     </li>
                     <li>
-                        <span>Te formamos en casos con distintos grados<br>de reabsorción ósea y de dificultad</span>
+                        <span>We train you in cases with different degrees of bone resorption and varying <br>levels of difficulty</span>
                         <img src="/assets/images/flecha-azulclaro-rellena.svg" alt="" class="courses-list-arrow">
                     </li>
+
                 </ul>
             </div>
             <!-- Columna derecha -->
             <div class="courses-right">
                 <div class="courses-text-block">
                     <p class="courses-text">
-                        Asistirás a cursos <strong>eminentemente prácticos</strong> en los que aprenderás a diagnosticar, planificar y tratar casos de diferente complejidad de implantología y cirugía oral.
+                        You will attend <strong>highly practical courses</strong> where you will learn to diagnose, plan, and treat implantology and oral surgery cases of varying levels of complexity.
                     </p>
                     <p class="courses-text">
-                        Obtendrás <strong>seguridad y capacidad para resolver por ti mismo</strong> todo tipo de casos en tu clínica.
+                        You will gain <strong>confidence and the ability to independently solve</strong> all types of cases in your clinic.
                     </p>
                 </div>
                 <div class="courses-image-2">
                     <img src="/assets/images/curso-implantologia-2.webp" alt="Práctica de implantología">
                 </div>
-                <a href="/contacto" class="courses-btn">Quiero más<br>información</a>
+                <a href="/contacto" class="courses-btn">More information</a>
             </div>
         </div>
     </section>

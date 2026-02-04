@@ -524,6 +524,7 @@ body {
 
 .courses-image-1 {
     margin-bottom: 2rem;
+    margin-top: 27px;
 }
 
 .courses-text-block {
@@ -1227,5 +1228,77 @@ body {
     .footer-copyright p {
         font-size: 0.75rem;
         line-height: 1.4;
+    }
+}
+
+/* ===== COURSES - CURSOS DE IMPLANTOLOGÍA ===== */
+@media (max-width: 480px) {
+    .courses {
+        padding: 3rem 1rem;
+    }
+    
+    .courses-bg {
+        height: 220px;
+    }
+    
+    .courses-container {
+        flex-direction: column;
+    }
+    
+    .courses-left,
+    .courses-right {
+        width: 100%;
+    }
+    
+    .courses-right {
+        flex-direction: column-reverse;
+    }
+    
+    .courses-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    
+    .courses-image-1,
+    .courses-image-2 {
+        margin-bottom: 1.5rem;
+    }
+    
+    .courses-text-block {
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    
+    .courses-text {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .courses-list li {
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .courses-list-arrow {
+        display: none;
+    }
+    
+    .courses-list span {
+        font-size: 0.95rem;
+    }
+    
+    .courses-btn {
+        padding: 1rem 3rem;
+    }
+    .courses-image-2 {
+        margin-top: 50px;
+    }
+    .courses-container {
+        gap: 30px;
+    }
+    .courses-text-block{
+        margin-top: 20px;
     }
 }
