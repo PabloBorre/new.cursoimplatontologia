@@ -8,5 +8,9 @@
     <link rel="stylesheet" href="/assets/styles/style.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/icon/favicon.ico">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 </head>
 <body>
