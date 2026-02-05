@@ -160,6 +160,9 @@
     </div>
 </section>
 
+<!-- CALENDARIO -->
+<?= view('cursos/calendar') ?>
+
 
 <!-- FORMULARIO DE CONTACTO -->
 <section class="contact-form-section">

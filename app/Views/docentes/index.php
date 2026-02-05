@@ -63,7 +63,7 @@
     <!-- FILA 4: Más de 200 cursos -->
     <section class="docentes-row docentes-row--4">
         <div class="docentes-row__container">
-            <h2 class="docentes-cursos-title">Más de 200<br>cursos impartidos</h2>
+            <h2 class="docentes-cursos-title">More than 200<br>courses delivered</h2>
         </div>
         <div class="docentes-row__container">
             <div class="docentes-row__col docentes-row__col--left">

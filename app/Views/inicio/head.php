@@ -6,6 +6,7 @@
     <title>Implantex Academy - Cursos de Implantología</title>
     <meta name="description" content="Cursos de implantología y cirugía oral para odontólogos. Más de 30 años de experiencia formando profesionales.">
     <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="stylesheet" href="/assets/styles/calendar.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/icon/favicon.ico">
     <!-- Swiper CSS -->

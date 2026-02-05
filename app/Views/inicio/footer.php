@@ -20,18 +20,18 @@
                 <div class="footer-nav-columns">
                     <nav class="footer-nav footer-nav--main">
                         <ul>
-                            <li><a href="<?= base_url('/') ?>">Inicio</a></li>
-                            <li><a href="<?= base_url('docentes') ?>">Docentes</a></li>
-                            <li><a href="<?= base_url('cursos') ?>">Cursos</a></li>
-                            <li><a href="<?= base_url('testimonios') ?>">Testimonios</a></li>
+                            <li><a href="<?= base_url('/') ?>">Home</a></li>
+                            <li><a href="<?= base_url('docentes') ?>">Instructor</a></li>
+                            <li><a href="<?= base_url('cursos') ?>">Courses</a></li>
+                            <li><a href="<?= base_url('testimonios') ?>">Testimonials</a></li>
                         </ul>
                     </nav>
                     
                     <nav class="footer-nav footer-nav--legal">
                         <ul>
-                            <li><a href="<?= base_url('aviso-legal') ?>">Aviso Legal</a></li>
-                            <li><a href="<?= base_url('politica-cookies') ?>">Política de cookies</a></li>
-                            <li><a href="<?= base_url('politica-privacidad') ?>">Política de privacidad</a></li>
+                            <li><a href="<?= base_url('legal-notice') ?>">Legal Notice</a></li>
+                            <li><a href="<?= base_url('cookie-policy') ?>">Cookie Policy</a></li>
+                            <li><a href="<?= base_url('privacy-policy') ?>">Privacy Policy</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -57,5 +57,6 @@
 <!-- GLightbox JS -->
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
+<script src="<?= base_url('assets/js/testimonials.js') ?>"></script>
 </body>
 </html>

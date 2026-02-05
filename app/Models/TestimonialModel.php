@@ -31,4 +31,32 @@ class TestimonialModel extends Model
         'image_path' => 'required',
         'video_path' => 'required',
     ];
+
+    /**
+     * Get all active testimonials ordered by creation date
+     *
+     * @param int|null $limit Number of testimonials to retrieve (null for all)
+     * @return array
+     */
+    public function getActiveTestimonials(?int $limit = null): array
+    {
+        $builder = $this->orderBy('created_at', 'DESC');
+        
+        if ($limit !== null) {
+            $builder->limit($limit);
+        }
+        
+        return $builder->findAll();
+    }
+
+    /**
+     * Get testimonials for homepage (limited)
+     *
+     * @param int $limit
+     * @return array
+     */
+    public function getHomepageTestimonials(int $limit = 6): array
+    {
+        return $this->getActiveTestimonials($limit);
+    }
 }

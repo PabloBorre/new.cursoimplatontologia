@@ -6,6 +6,7 @@ use App\Models\CourseModel;
 use App\Models\AuxiliaryCourseModel;
 use \App\Models\DoctorModel;
 use \App\Models\LocalModel;
+use App\Models\TestimonialModel;
 
 class Home extends BaseController
 {
@@ -98,6 +99,17 @@ class Home extends BaseController
         return view('inicio/head')
             . view('inicio/header')
             . view('docentes/single', $data)
+            . view('inicio/footer');
+    }
+
+    public function testimonios(){
+
+        $testimonialModel = new TestimonialModel();
+        $data['testimonials'] = $testimonialModel->getActiveTestimonials();
+
+        return view('inicio/head')
+            . view('inicio/header')
+            . view('testimonios/index', $data)
             . view('inicio/footer');
     }
 }

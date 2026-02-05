@@ -341,7 +341,7 @@ body {
 .stats {
     position: relative;
     background-color: var(--color-clarity);
-    padding: 4rem 2rem 3rem;
+    padding: 5rem 2rem 3rem;
     overflow: hidden;
 }
 
@@ -373,8 +373,6 @@ body {
     position: relative;
     height: 140px;
     width: 120px;
-    margin-bottom: 1rem;
-    
 }
 
 .stat-arrow-bg {
@@ -392,7 +390,7 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%) rotate(270deg);
-    height: 160px;
+    height: 200px;
     width: auto;
 }
 
@@ -814,6 +812,7 @@ body {
     margin-left: auto;
     display: block;
     margin-top: -120px;
+    height: 488px;
 }
 
 
@@ -2526,7 +2525,7 @@ a.contact-bar__item:hover {
 
 .course-card__bg--light {
     bottom: 60px;
-    height: 25%;
+    height: 22%;
     background-color: var(--color-clarity);
 }
 
@@ -5206,5 +5205,730 @@ a.contact-bar__item:hover {
     .doctor-back__btn {
         font-size: 0.95rem;
         padding: 0.8rem 2rem;
+    }
+}
+
+/* ==========================================================================
+   TESTIMONIALS SECTION
+   ========================================================================== */
+
+.testimonials {
+    background-color: var(--color-white);
+}
+
+.testimonials__container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+}
+
+/* Header */
+.testimonials__header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.testimonials__title {
+    font-family: var(--font-primary);
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--color-depth);
+    margin-bottom: 16px;
+}
+
+.testimonials__subtitle {
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    color: var(--color-anchor);
+    font-weight: 400;
+}
+
+/* Grid */
+.testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.testimonials__empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    color: var(--color-anchor);
+    padding: 40px;
+}
+
+/* ==========================================================================
+   TESTIMONIAL CARD
+   ========================================================================== */
+
+.testimonial-card {
+    background-color: var(--color-depth);
+    border-radius: 0;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(4, 39, 52, 0.3);
+}
+
+.testimonial-card:hover .testimonial-card__play {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.testimonial-card:hover .testimonial-card__image {
+    transform: scale(1.05);
+}
+
+/* Media (Image/Video thumbnail) */
+.testimonial-card__media {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.testimonial-card__image-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border: 6px solid var(--color-clarity);
+    background-color: var(--color-clarity);
+}
+
+.testimonial-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.testimonial-card__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
+    pointer-events: none;
+}
+
+.testimonial-card__play svg {
+    filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.3));
+}
+
+/* Info */
+.testimonial-card__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.testimonial-card__name-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.testimonial-card__arrow {
+    flex-shrink: 0;
+}
+
+.testimonial-card__name {
+    font-family: var(--font-primary);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-clarity);
+}
+
+.testimonial-card__country {
+    font-family: var(--font-secondary);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-advance);
+    text-align: right;
+    line-height: 1.3;
+}
+
+/* ==========================================================================
+   VIDEO MODAL
+   ========================================================================== */
+
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-modal__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 39, 52, 0.95);
+    cursor: pointer;
+}
+
+.video-modal__content {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    max-height: 80vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-modal__close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.video-modal__close:hover {
+    transform: scale(1.2);
+}
+
+.video-modal__content video {
+    width: 100%;
+    max-height: 80vh;
+    border-radius: 4px;
+    background-color: #000;
+    object-fit: contain;
+}
+
+/* ==========================================================================
+   RESPONSIVE - TABLET (1024px)
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+
+    .testimonials__title {
+        font-size: 40px;
+    }
+
+    .testimonials__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .testimonial-card__name {
+        font-size: 16px;
+    }
+
+    .testimonial-card__country {
+        font-size: 13px;
+    }
+}
+
+/* ==========================================================================
+   RESPONSIVE - MOBILE (768px)
+   ========================================================================== */
+
+@media (max-width: 768px) {
+
+    .testimonials__header {
+        margin-bottom: 40px;
+    }
+
+    .testimonials__title {
+        font-size: 32px;
+    }
+
+    .testimonials__subtitle {
+        font-size: 16px;
+    }
+
+    .testimonials__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .testimonial-card {
+        padding: 15px;
+    }
+
+    .testimonial-card__image-wrapper {
+        border-width: 4px;
+    }
+
+    .testimonial-card__play svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .testimonial-card__name {
+        font-size: 14px;
+    }
+
+    .testimonial-card__country {
+        font-size: 12px;
+    }
+
+    .testimonial-card__arrow {
+        width: 18px;
+        height: 15px;
+    }
+}
+
+/* ==========================================================================
+   RESPONSIVE - MOBILE SMALL (480px)
+   ========================================================================== */
+
+@media (max-width: 480px) {
+    .testimonials {
+        padding: 50px 0;
+    }
+
+    .testimonials__title {
+        font-size: 28px;
+    }
+
+    .testimonials__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .testimonial-card {
+        padding: 15px;
+    }
+
+    .testimonial-card__media {
+        margin-bottom: 15px;
+    }
+
+    .testimonial-card__play svg {
+        width: 45px;
+        height: 45px;
+    }
+
+    .video-modal__close {
+        top: -40px;
+    }
+}
+
+/* ==========================================================================
+   CTA DESTACAR - SECCIÓN CALL TO ACTION
+   ========================================================================== */
+
+.cta-destacar {
+    padding: 0 0 80px 0;
+    background-color: var(--color-white);
+}
+
+.cta-destacar__container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Imagen */
+.cta-destacar__image {
+    flex: 0 0 auto;
+    width: 500px;
+}
+
+.cta-destacar__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Contenido */
+.cta-destacar__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.cta-destacar__title {
+    font-family: var(--font-primary);
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--color-depth);
+    line-height: 1.1;
+    margin: 0 0 24px 0;
+}
+
+.cta-destacar__text {
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-depth);
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+    max-width: 420px;
+}
+
+.cta-destacar__btn {
+    display: inline-block;
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-white);
+    background-color: var(--color-depth);
+    padding: 16px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-destacar__btn:hover {
+    background-color: var(--color-anchor);
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   RESPONSIVE - TABLET (1024px)
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    .cta-destacar {
+        padding: 60px 0;
+    }
+
+    .cta-destacar__container {
+        gap: 40px;
+    }
+
+    .cta-destacar__image {
+        width: 320px;
+    }
+
+    .cta-destacar__title {
+        font-size: 40px;
+    }
+
+    .cta-destacar__text {
+        font-size: 15px;
+    }
+}
+
+/* ==========================================================================
+   RESPONSIVE - MOBILE (768px)
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .cta-destacar {
+        padding: 50px 0;
+    }
+
+    .cta-destacar__container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .cta-destacar__image {
+        width: 100%;
+    }
+
+    .cta-destacar__content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .cta-destacar__title {
+        font-size: 32px;
+    }
+
+    .cta-destacar__title br {
+        display: none;
+    }
+
+    .cta-destacar__text {
+        font-size: 15px;
+        max-width: 100%;
+    }
+
+    .cta-destacar__btn {
+        padding: 14px 32px;
+        font-size: 15px;
+    }
+}
+
+/* ==========================================================================
+   RESPONSIVE - MOBILE SMALL (480px)
+   ========================================================================== */
+
+@media (max-width: 480px) {
+    .cta-destacar {
+        padding: 40px 0;
+    }
+
+    .cta-destacar__container {
+        padding: 0 1rem;
+        gap: 24px;
+    }
+
+    .cta-destacar__title {
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+
+    .cta-destacar__text {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .cta-destacar__btn {
+        padding: 12px 28px;
+        font-size: 14px;
+    }
+}
+
+
+/* ==========================================================================
+   HERO VIDEO - Video de YouTube como fondo
+   ========================================================================== */
+
+.hero--video {
+    position: relative;
+    width: 100%;
+    min-height: 550px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.hero--video .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: #052733; /* Color base mientras carga */
+}
+
+/* Contenedor del video */
+.hero-video-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.hero-video-container.video-ready {
+    opacity: 1;
+}
+
+/* El iframe del video - hacerlo más grande para cubrir y centrar */
+.hero-video-container iframe,
+#hero-video-player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 56.25vw; /* Ratio 16:9 */
+    min-height: 100vh;
+    min-width: 177.78vh; /* 100 * 16/9 */
+    transform: translate(-50%, -50%);
+}
+
+/* Imagen de fallback */
+.hero-bg-fallback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transition: opacity 0.5s ease;
+}
+
+/* Efecto de filtro igual que page-hero */
+.hero--video .hero-video-container,
+.hero--video .hero-bg-fallback {
+    mix-blend-mode: luminosity;
+    opacity: 0.43;
+}
+
+.hero--video .hero-video-container.video-ready {
+    opacity: 0.43;
+}
+
+/* Overlay con color - igual que page-hero */
+.hero--video .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(84, 151, 175, 0.55);
+    mix-blend-mode: multiply;
+    z-index: 2;
+}
+
+/* Flecha decorativa */
+.hero--video .hero-arrow {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%) rotate(270deg);
+    width: auto;
+    height: 105%;
+    opacity: 0.3;
+    z-index: 3;
+    pointer-events: none;
+}
+
+/* Contenido */
+.hero--video .hero-content {
+    position: relative;
+    z-index: 4;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    width: 100%;
+}
+
+.hero--video h1 {
+    font-family: var(--font-primary);
+    font-weight: 200;
+    font-size: 3.5rem;
+    line-height: 1.15;
+    color: var(--color-white);
+}
+
+.hero--video h1 span {
+    color: var(--color-reflect);
+}
+
+.hero--video .hero-logos {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.hero--video .hero-logos img {
+    height: 40px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .hero--video {
+        min-height: 480px;
+    }
+
+    .hero--video h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero--video .hero-arrow {
+        left: 70%;
+        height: 90%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero--video {
+        min-height: 420px;
+    }
+
+    .hero--video .hero-content {
+        padding: 3rem 1.5rem;
+    }
+
+    .hero--video h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero--video .hero-logos {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .hero--video .hero-logos img {
+        height: 32px;
+    }
+
+    .hero--video .hero-arrow {
+        left: 75%;
+        height: 80%;
+        opacity: 0.2;
+    }
+}
+
+/* Mobile small */
+@media (max-width: 480px) {
+    .hero--video {
+        min-height: 350px;
+    }
+
+    .hero--video .hero-content {
+        padding: 2.5rem 1rem;
+    }
+
+    .hero--video h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero--video .hero-logos {
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .hero--video .hero-logos img {
+        height: 24px;
+    }
+
+    .hero--video .hero-arrow {
+        display: none;
+    }
+}
+
+/* ==========================================================================
+   PREFERENCIAS DE MOVIMIENTO REDUCIDO
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-video-container {
+        display: none !important;
+    }
+    
+    .hero-bg-fallback {
+        display: block !important;
+        opacity: 0.43 !important;
     }
 }

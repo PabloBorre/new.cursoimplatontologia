@@ -8,11 +8,11 @@
         <!-- Navegación -->
         <nav class="header-nav" id="headerNav">
             <ul>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/docentes">Docentes</a></li>
-                <li><a href="/cursos">Cursos</a></li>
-                <li><a href="/testimonios">Testimonios</a></li>
-                <li><a href="/contacto">Contacto</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/docentes">Instructors</a></li>
+                <li><a href="/cursos">Courses</a></li>
+                <li><a href="/testimonios">Testimonials</a></li>
+                <li><a href="/contacto">Contact</a></li>
             </ul>
             <!-- Teléfono dentro del nav (visible solo en mobile/tablet) -->
             <a href="tel:+17863287805" class="header-phone header-phone--nav">
